@@ -4,7 +4,7 @@ import numpy as np
 import pydeck as pdk
 import plotly.express as px
 
-path = 'Motor_Vehicle_Collisions_-_Crashes.csv'
+path = 'Accidentes_Vehiculares_NYC_2013-2019.csv'
 
 st.title("Accidentes de vehículos motorizados en Nueva York 2012-2019")
 st.markdown("### Este dashboard analiza los accidentes vehiculares en Nueva York")
