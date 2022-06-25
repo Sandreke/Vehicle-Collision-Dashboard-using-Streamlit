@@ -28,6 +28,7 @@ st.map(data.query("injured_persons >= @injured_people")[["latitude","longitude"]
 
 st.header("Accidentes que ocurren durante cierta hora del día")
 hour = st.slider("Hora a analizar", 0, 23)
+data['fecha/hora'] = pd.to_datetime(data['fecha/hora'], format='%m/%d/%Y %H:%M') 
 data = data[data['fecha/hora'].dt.hour == hour]
 num_acc = len(data)
 
