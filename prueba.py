@@ -6,7 +6,7 @@ import plotly.express as px
 
 path = 'Accidentes_Vehiculares_NYC_2013-2019.csv'
 
-st.title("Accidentes de vehículos motorizados en Nueva York 2012-2019")
+st.title("Accidentes de vehículos motorizados en Nueva York 2013-2019")
 st.markdown("### Este dashboard analiza los accidentes vehiculares en Nueva York")
 
 @st.cache(persist=True, allow_output_mutation=True)
@@ -18,7 +18,7 @@ def cargar_data(nrows):
     data.rename(columns={'crash_date_crash_time':'fecha/hora'}, inplace=True)
     return data
 
-data = cargar_data(100000)
+diata = cargar_data(100000)
 original_data = data
 
 st.header("Lugares donde se ocasionan cierto número de heridos")
