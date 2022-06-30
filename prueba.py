@@ -6,8 +6,9 @@ import plotly.express as px
 
 path = 'Accidentes_Vehiculares_NYC_2013-2019.csv'
 
-st.title("Accidentes de vehículos en Nueva York 2013-2019")
-st.markdown("### Este dashboard analiza los accidentes vehiculares en Nueva York")
+st.title("Accidentes vehiculares en Nueva York 2013-2019")
+st.markdown("### Este dashboard analiza los accidentes vehiculares en Nueva York utilizando Streamlit")
+st.write("check out this [Sandro Agama](https://linkedin.com/in/sandroagama)")
 
 @st.cache(persist=True, allow_output_mutation=True)
 def cargar_data(nrows):
