@@ -18,7 +18,7 @@ def cargar_data(nrows):
     data.rename(columns={'crash_date_crash_time':'fecha/hora'}, inplace=True)
     return data
 
-diata = cargar_data(100000)
+data = cargar_data(100000)
 original_data = data
 
 st.header("Lugares donde se ocasionan cierto número de heridos")
